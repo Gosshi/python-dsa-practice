@@ -27,10 +27,11 @@ def quick_sort_center_pivot(arr):
 
     return quick_sort_center_pivot(left) + center + quick_sort_center_pivot(right)
 
+
 def quick_sort_random_pivot(arr):
     if len(arr) <= 1:
         return arr
-    pivot = arr[random.randrange(1,len(arr)-1)]
+    pivot = arr[random.randrange(0, len(arr) - 1)]
     left, right, center = [], [], []
     for num in arr:
         if pivot < num:
@@ -40,7 +41,7 @@ def quick_sort_random_pivot(arr):
         else:
             center.append(num)
 
-    return quick_sort_center_pivot(left) + center + quick_sort_center_pivot(right)
+    return quick_sort_random_pivot(left) + center + quick_sort_random_pivot(right)
 
 
 if __name__ == "__main__":
