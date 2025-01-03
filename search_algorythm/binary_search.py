@@ -28,16 +28,16 @@ if __name__ == "__main__":
     print(binary_search(arr, target, 0, len(arr) - 1))
 
 # ChatGPT
-# def binary_search(arr, target, low, high):
+# def search_algorythm(arr, target, low, high):
 #     if low > high:
 #         return -1
 #     # 中央のindex
 #     middle = (low + high) // 2
 #
 #     if target < arr[middle]:
-#         return binary_search(arr, target, low, middle - 1)
+#         return search_algorythm(arr, target, low, middle - 1)
 #     elif target > arr[middle]:
-#         return binary_search(arr, target, middle + 1, high)
+#         return search_algorythm(arr, target, middle + 1, high)
 #     else:
 #         return middle
 #
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 # def binary_search_wrapper(arr, target):
 #     if not arr:
 #         return -1
-#     return binary_search(arr, target, 0, len(arr) - 1)
+#     return search_algorythm(arr, target, 0, len(arr) - 1)
 #
 #
 # if __name__ == "__main__":

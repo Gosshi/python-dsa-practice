@@ -7,7 +7,7 @@
 #
 # 式 "3 4 +" は、通常の表記では 3 + 4 に対応し、結果は 7 となります。
 # 式 "5 1 2 + 4 * + 3 -" は、通常の表記では 5 + ((1 + 2) * 4) - 3 に対応し、結果は 14 となります。
-from stack import Stack
+from data_structure.stack import Stack
 
 
 def evaluate_rpn(expression: str) -> int:

@@ -9,7 +9,7 @@
 #
 # 開始括弧がある場合、対応する終了括弧が存在する。
 # 括弧の順序が正しい（例: ({[]}) は正しいが、([)] は正しくない）。
-from stack import Stack
+from data_structure.stack import Stack
 
 
 def is_balanced(s: str) -> bool:
